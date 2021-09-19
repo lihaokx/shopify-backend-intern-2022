@@ -128,7 +128,7 @@ imageRouter.route('/:imgId')
                                 console.log(pathDlt, " was deleted")
                             res.statusCode = 200;
                             res.setHeader('Content-Type', 'application/json');
-                            res.json({successfullyDeleted: "Yes", imgId: req.params.imgId, imgPath: './public/images/'+pathDlt});
+                            res.json({successfullyDeleted: "Yes", DeletedImgName: req.params.imgId, DeletedImgPath: './public/images/'+pathDlt, RemainImagesInDatabase: user.images});
                         })  
                     })
                 }
