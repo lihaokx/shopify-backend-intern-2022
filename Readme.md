@@ -61,6 +61,8 @@ The `"filename"` field is the filename of your image stored in the backend. If y
 ## Step-4 Delete images
 The url for upload is `https://shopify-backend-intern-2022.herokuapp.com/filename`. 
 
+Use the filename which you want to delete to replace the `filename` string in the above url. For example, `https://shopify-backend-intern-2022.herokuapp.com/test1HaoLi.jpg` means I will delete `test1HaoLi.jpg`. Choose `DELETE` method.
+
 ## Dowload in your own device.
 
 
