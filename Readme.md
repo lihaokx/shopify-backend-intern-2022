@@ -1,7 +1,8 @@
 # A Rest API used for uploading and deleting images.
 
-This is a project for Shopify backend intern 2022 challenge.
-It is hosted on Heroku.
+This is a project for [Shopify backend intern 2022 challenge](https://docs.google.com/document/d/1eg3sJTOwtyFhDopKedRD6142CFkDfWp1QvRKXNTPIOc/edit).
+
+It is hosted on Heroku(https://shopify-backend-intern-2022.herokuapp.com/).
 ## Technologies.
   Nodes.js, Express, MongoDB database, Json Web Token
 ## Key feature.
