@@ -6,11 +6,11 @@ It is hosted on Heroku.
   Nodes.js, Express, MongoDB database, Json Web Token
 ## Key feature.
 1. User authentication(by Json Web Token).
-1. Only registered users can upload and delete.
-2. Add images one / bulk images.
-3. Delete an image.
-4. One can only delete his or her own images.
-2. Response useful information after deletion and uploading.
+2. Only registered users can upload and delete.
+3. Add images one / bulk images.
+4. Delete an image.
+5. One can only delete his or her own images.
+6. Response useful information after deletion and uploading.
 
 ## Important tips.
 1. Only support `jpg|jpeg|png|gif|JPG` format images.
@@ -61,9 +61,22 @@ The `"filename"` field is the filename of your image stored in the backend. If y
 ## Step-4 Delete images
 The url for upload is `https://shopify-backend-intern-2022.herokuapp.com/filename`. 
 
-Use the filename which you want to delete to replace the `filename` string in the above url. For example, `https://shopify-backend-intern-2022.herokuapp.com/test1HaoLi.jpg` means I will delete `test1HaoLi.jpg`. Choose `DELETE` method.
+Use the filename which you want to delete to replace the `filename` string in the above url. For example, `https://shopify-backend-intern-2022.herokuapp.com/test1HaoLi.jpg` means I will delete `test1HaoLi.jpg`. Choose `DELETE` method. You will get the response.
 
-## Dowload in your own device.
+![](./readmeImgs/delete1.jpg)
+
+If you delete an image that does not exist or does not belongs to you. You will get the following error.
+![](./readmeImgs/delete2.jpg)
+
+## Run in your own device.
+
+`npm install` 
+
+Install all the necessary packages.
+
+`npm start` or `nodemon`
+
+Start to run the server.
 
 
 
