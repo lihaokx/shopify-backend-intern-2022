@@ -93,10 +93,11 @@ imageRouter.route('/:imgId')
 .delete(  
     authenticate.verifyUser,
     (req, res, next) => {
+    console.log("req.body: ", req.body)
+    req.body.user = req.user._id;
     userModel.findById( req.user._id )
     .then( async (user)  => {
-        console.log("req.body: ", req.body)
-        req.body.user = req.user._id;
+
         if(user!=null){
             try {
                 var pathDlt = ''
