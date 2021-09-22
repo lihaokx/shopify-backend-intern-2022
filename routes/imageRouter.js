@@ -95,7 +95,8 @@ imageRouter.route('/:imgId')
     (req, res, next) => {
     userModel.findById( req.user._id )
     .then( async (user)  => {
-        console.log("params: ", req.params.imgId)
+        console.log("req.body: ", req.body)
+        req.body.user = req.user._id;
         if(user!=null){
             try {
                 var pathDlt = ''
