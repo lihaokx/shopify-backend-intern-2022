@@ -44,14 +44,17 @@ The url for login is `https://shopify-backend-intern-2022.herokuapp.com/users/lo
 Copy the username/password pair in the cody. Choose `raw` and `JSON` as follows. Use `POST` method and click send button.
 
 ![](./readmeImgs/login.jpg)
+
 After sending, you will receive the response of login successfully. In the body part, you will see a `token` with a long string. That is a JWT token for user authentication. Copy it and move the next step. 
 ## Step-3 Upload images
 The url for upload is `https://shopify-backend-intern-2022.herokuapp.com/image`. 
 
 In the `Authorization` part, choose `Bearer Token` and paste the above JWT in the Token input box. It could be seen as follows:
+
 ![](./readmeImgs/upload1.jpg)
 
 Then, in the `body` part, create a key named `imageFile` (should be exactly the same). Choose `Text` and click `select files` to upload images you want.
+
 ![](./readmeImgs/upload2.jpg)
 
 In the response body part, you will see the reponse from the API. 
@@ -62,12 +65,18 @@ The `"filename"` field is the filename of your image stored in the backend. If y
 ## Step-4 Delete images
 The url for upload is `https://shopify-backend-intern-2022.herokuapp.com/filename`. 
 
-Use the filename which you want to delete to replace the `filename` string in the above url. For example, `https://shopify-backend-intern-2022.herokuapp.com/test1HaoLi.jpg` means I will delete `test1HaoLi.jpg`. Choose `DELETE` method. You will get the response.
+Use the filename which you want to delete and replace the `filename` string in the above url. Remember please clear the previous value in the `Select Files` field as follows! Otherwise, images will be in the `req.body`, which may result errors.
+
+![](./readmeImgs/delete3.jpg)
+
+For example, `https://shopify-backend-intern-2022.herokuapp.com/test1HaoLi.jpg` means I will delete `test1HaoLi.jpg`. Choose `DELETE` method. You will get the response.
 
 ![](./readmeImgs/delete1.jpg)
 
-If you delete an image that does not exist or does not belongs to you. You will get the following error.
+If you want delete an image that does not exist or does not belong to you. You will get the following error response.
+
 ![](./readmeImgs/delete2.jpg)
+
 
 ## Run in your own device.
 
